@@ -7,6 +7,7 @@ import Dashboard from '../Pages/Dashboard';
 
 import '../App.css'
 import '../Style/navbar.css'
+//import InputForm from '../Components/InputForm';
 
 
 const Routes = () => (

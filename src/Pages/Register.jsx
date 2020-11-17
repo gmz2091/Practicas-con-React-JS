@@ -1,13 +1,22 @@
 import React, { Component } from 'react';
-import '../Style/Register.css'
+import '../Style/Register.css' 
+
+
+const validate = values => {
+  const errors = {}
+  if (!values.email) {
+      errors.email = 'Este Campo es Obligatorio'
+  }
+  if (!values.password) {
+    errors.password = 'Este Campo es Obligatorio'
+}
+  return errors
+}
 
 export default class  Register extends  Component {
 
  state = {
-     error: {
-        email: 'Campo Obligatorio',
-        password: 'Campo Obligatorio',
-     }
+     error: {}
  }
 
    
@@ -18,13 +27,22 @@ export default class  Register extends  Component {
 
     handleSubmit = e => {
         e.preventDefault()
-        console.log('previniendo', this.state)
+        const { error, ...sinError } = this.state
+        const result = validate(sinError)
+
+        this.setState({ error: result})
+
+        if (!Object.keys(result).length) {
+            console.log('Formulario Enviado')
+        }
+        e.target.reset()
+        
     }
     
     
     render() {
     const { error } = this.state
-    console.log(this.state)
+    
     return (    
     <>
 
