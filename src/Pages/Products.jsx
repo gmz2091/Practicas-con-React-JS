@@ -20,6 +20,7 @@ const Products = () => {
 
     const handleSubmit = e => {
         e.preventDefault()
+        e.target.reset()
         console.log(values)
     };
 
@@ -39,7 +40,7 @@ const Products = () => {
                         <div className="input-icon"><box-icon type='solid' color='#b1b1b1' name='lock-alt'></box-icon></div>
                     </div>
                     <div className="input-group input-group-icon">
-                        <div className="input-icon-textarea"><box-icon type='solid' color='#b1b1b1' name='lock-alt'></box-icon></div>
+                        <div className="input-icon-textarea"></div>
                         <textarea name="description" className='textArea' placeholder="Add Task To Work" rows="10" onChange={handleInputChange} />
                     </div>
                     <button className="btn-lg">Enviar</button>

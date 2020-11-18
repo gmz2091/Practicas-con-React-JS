@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 :root{
   --green-color: #213f28;
@@ -235,6 +235,7 @@ select option {
 
 
 .textArea{
+  font-family: 'Ubuntu', sans-serif;
   width: 100%;
   padding: 1em;
   line-height: 1.4;
