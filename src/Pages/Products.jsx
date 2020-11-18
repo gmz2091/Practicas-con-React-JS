@@ -24,7 +24,7 @@ const Products = () => {
     };
 
     return (
-        <div className='container mt-5'>
+        <div style={form}>
         <h1>Registro de Notas</h1>
         <div className="containerForm">
             <form onSubmit={handleSubmit}>
@@ -53,3 +53,16 @@ const Products = () => {
 }
 
 export default Products;
+
+
+const form = {
+    position: 'relative',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: '20px',
+    width: '50%',
+    background: '#fff',
+    padding: '25px 20px',
+    borderRadius: '3px'
+
+}

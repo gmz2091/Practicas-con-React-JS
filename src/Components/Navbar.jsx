@@ -26,21 +26,39 @@ const Navbar = () => {
         
     }
 
-    function showSideMenu() {
+    document.addEventListener('click', (e) =>{
+        const closeOne = document.getElementById('closeOne')
+        const closeTwo = document.getElementById('closeTwo')
         
         const sidebar = document.getElementById('sidebar')
 
-        console.log('Shoe')
-        console.log(sidebar)
-        if (!sidebar.classList.contains('hide')) {
-            sidebar.classList.add('hide')
-            sidebar.classList.remove('hideMenu')
-        }else{
+        console.log('Click en el DOM')
+        if (sidebar) {
             sidebar.classList.remove('hide')
-            sidebar.classList.add('hideMenu')
+            sidebar.classList.add('hideMenu')            
         }
 
+        closeOne.classList.remove('close')
+        closeTwo.classList.remove('close2')
+        closeOne.classList.add('containerMenu')
+
+    })
+
+    function showSideMenu(e) {
         hidemenu()
+        
+        const sidebar = document.getElementById('sidebar')
+        console.log(e.target.classList)
+        if (sidebar) {
+            sidebar.classList.remove('hide')
+            sidebar.classList.add('hideMenu')
+        }  
+            if ( e.target.classList.contains('showmenu') ) {
+                sidebar.classList.add('hide')
+                sidebar.classList.remove('hideMenu')
+            }
+
+
     }
 
     return (
