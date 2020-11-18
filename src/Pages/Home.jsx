@@ -5,7 +5,7 @@ import InputForm from '../Components/InputForm';
 
 const sendData = (e) => {
   e.preventDefault()
-  console.log('Click')
+ 
 }
 
 const Home = () => {
@@ -32,16 +32,6 @@ const form = {
   padding: '25px 20px',
   borderRadius: '3px'
 
-}
-
-const AppHeader = {
-  backgroundColor: '#ced0d4',
-  minHeight: '100vh',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  fontSize: 'calc(10px + 2vmin)',
 }
 
 const styleBtn = {

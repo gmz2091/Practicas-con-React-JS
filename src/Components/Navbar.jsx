@@ -31,8 +31,6 @@ const Navbar = () => {
         const closeTwo = document.getElementById('closeTwo')
         
         const sidebar = document.getElementById('sidebar')
-
-        console.log('Click en el DOM')
         if (sidebar) {
             sidebar.classList.remove('hide')
             sidebar.classList.add('hideMenu')            
