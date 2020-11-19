@@ -84,7 +84,7 @@ const Navbar = () => {
                 <NavLink exact activeClassName="active" className="navLink" to="/"><span className='icon'><box-icon name='home' type='solid' color='white' size='sm' /></span> Home</NavLink>
                 <NavLink activeClassName="active" className="navLink" to="/products"><span className= 'icon'><box-icon name='card' type='solid' color='white' size='sm'></box-icon></span> Products</NavLink>
                 <NavLink activeClassName="active" className="navLink" to="/register"><span className= 'icon'><box-icon name='user' type='solid' color='#ffffff' size='sm'></box-icon></span> Sign Up</NavLink>
-                <NavLink activeClassName="active" className="navLink" to="/dashboard"><span className= 'icon'><box-icon name='dashboard' type='solid' color='#ffffff' size='sm'></box-icon></span> Dash Board</NavLink>
+                <NavLink activeClassName="active" className="navLink" to="/dashboard"><span className= 'icon'><box-icon name='card' type='solid' color='white' size='sm'></box-icon></span> Dash Board</NavLink>
             </div>
         </nav>
         </>
